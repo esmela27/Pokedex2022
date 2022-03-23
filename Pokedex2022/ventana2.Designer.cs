@@ -39,6 +39,7 @@
             this.especie = new System.Windows.Forms.Label();
             this.numero = new System.Windows.Forms.Label();
             this.tipo = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.foto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,6 +156,20 @@
             this.tipo.TabIndex = 9;
             this.tipo.Text = "tipo";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Roboto Condensed", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(331, 326);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 50);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Cadena Evolutiva";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ventana2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -162,6 +177,7 @@
             this.BackgroundImage = global::Pokedex2022.Properties.Resources.carta_dragon1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(516, 783);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tipo);
             this.Controls.Add(this.numero);
             this.Controls.Add(this.especie);
@@ -193,5 +209,6 @@
         private System.Windows.Forms.Label especie;
         private System.Windows.Forms.Label numero;
         private System.Windows.Forms.Label tipo;
+        private System.Windows.Forms.Button button1;
     }
 }

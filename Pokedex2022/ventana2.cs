@@ -15,7 +15,9 @@ namespace Pokedex2022
 
         Conexion miConexion = new Conexion();
         int id = 0;
-       
+        DataTable misPokemons;
+
+
         public ventana2(int idActual, DataTable misPokemons)
         {
             id = idActual;
@@ -72,6 +74,12 @@ namespace Pokedex2022
         private void movimiento3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cadenaEvolutiva ventana = new cadenaEvolutiva(id, misPokemons);
+            ventana.Show();
         }
     }
 }
